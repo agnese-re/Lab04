@@ -1,14 +1,17 @@
 package it.polito.tdp.lab04.model;
 
-public class TestModel {
+import java.util.List;
+
+public class TestModel {	// per testare il modello
 
 	public static void main(String[] args) {
 
 		Model model = new Model();
 		
-		/*
-		 * 	Write here your test model
-		 */
+		List<Corso> listaCorsi = model.getTuttiICorsi();
+		
+		Studente studenteCercato = model.ricercaStudente(169195);
+		System.out.println(studenteCercato.toString());
 
 	}
 
